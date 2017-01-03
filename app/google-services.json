@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "124231183727",
+    "firebase_url": "https://zakram-153121.firebaseio.com",
+    "project_id": "zakram-153121",
+    "storage_bucket": "zakram-153121.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124231183727:android:5ba9aea57165f507",
+        "android_client_info": {
+          "package_name": "Com.phenix.lockzakram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124231183727-bj5fvdp6g9kcgdu2fmghoccek4s1s5e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKBGohoOwCa4sQf5RZbFpAT1JlWifaE2Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124231183727:android:1495319cd7a74d10",
+        "android_client_info": {
+          "package_name": "com.zakramlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124231183727-bj5fvdp6g9kcgdu2fmghoccek4s1s5e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKBGohoOwCa4sQf5RZbFpAT1JlWifaE2Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
