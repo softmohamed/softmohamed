@@ -1,0 +1,133 @@
+<resources>
+    <string name="name_app">Zakram</string>
+    <string name="manage">Manage</string>
+    <string name="revert">Revert</string>
+    <string name="msg_no_locked_app">No app has been locked</string>
+    <string name="enable_on_startup">Enable on startUp</string>
+    <string name="security_method">Security Methods</string>
+    <string name="security_method_pattern">Pattern</string>
+    <string name="security_method_pin">Pin</string>
+    <string name="security_method_password">Password</string>
+    <string name="security_method_voice">Voice</string>
+    <string name="security_method_face">Face</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="try_again">Try again</string>
+    <string name="quit">Quit</string>
+    <string name="do_it_myself">Another time, quit!</string>
+    <string name="allow">allow</string>
+    <string name="enable_stat_manager">To use the Zakram App, it need to access to the phone Usage Stats Manager</string>
+
+    <string name="unlock_app_msg">Do want to unlock the %1$s app </string>
+    <string name="pattern_required">To use Zakram Lock, you need to define a good Pattern.</string>
+    <string name="share_msg">Protect your privacy with zakram \n  https://play.google.com/store/apps/details?id=com.zakramlock</string>
+    <string name="share_msg_p1">Protect your privacy with zakram</string>
+
+
+    <string name="alp_42447968_cmd_confirm">Confirm</string>
+    <string name="alp_42447968_cmd_continue">Continue</string>
+    <string name="alp_42447968_cmd_forgot_pattern">Forgot pattern?</string>
+    <string name="alp_42447968_cmd_retry">Retry</string>
+    <string name="alp_42447968_loading">Loading…</string>
+    <string name="alp_42447968_lockscreen_access_pattern_cell_added">Cell added</string>
+    <string name="alp_42447968_lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <string name="alp_42447968_lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="alp_42447968_lockscreen_access_pattern_start">Pattern started</string>
+    <string name="alp_42447968_msg_connect_4dots">Connect at least 4 dots. Try again…</string>
+    <string name="alp_42447968_msg_draw_an_unlock_pattern">Draw an unlock pattern </string>
+    <string name="alp_42447968_msg_draw_pattern_to_unlock">Draw pattern to unlock</string>
+    <string name="alp_42447968_msg_pattern_recorded">Pattern recorded!</string>
+    <string name="alp_42447968_msg_redraw_pattern_to_confirm">Redraw pattern to confirm</string>
+    <string name="alp_42447968_msg_release_finger_when_done">Release finger when done</string>
+    <string name="alp_42447968_msg_try_again">Sorry, try again</string>
+    <string name="alp_42447968_msg_your_new_unlock_pattern">Your new unlock pattern</string>
+
+    <string name="secure_question_msg">Secure Question</string>
+    <string name="wrong_pin_msg">Wrong PIN</string>
+
+    <plurals name="alp_42447968_pmsg_connect_x_dots">
+        <item quantity="one">Connect at least %1$d dot. Try again…</item>
+        <item quantity="other">Connect at least %1$d dots. Try again…</item>
+    </plurals>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="version">Version %1$s</string>
+    <string name="privacy_terms">Privacy and Terms </string>
+    <string name="recovery_msg">Recovery</string>
+
+    <string name="question1">What was your childhood nickname?</string>
+    <string name="question2">What is the name of your favorite childhood friend ?</string>
+    <string name="question3">In what city or town did your mother and father meet ?</string>
+    <string name="question4">What is the middle name of your oldest child ?</string>
+    <string name="question5">What is your favorite team ?</string>
+    <string name="question6">What is your favorite movie ?</string>
+    <string name="question7">What is the first name of the boy or girl that you first kissed ?</string>
+    <string name="question8">What was the make and model of your first car ?</string>
+    <string name="question9">What was the last name of your third grade teacher ?</string>
+    <string name="ads_id">ca-app-pub-9368272619975967/5824274930</string>
+
+    <string name="update_msg"> <![CDATA[ Update Your <font color=\"#000000\"> %1$s </font>]]></string>
+
+    <string name="question10">What was the name of the company where you had your first job ?</string>
+
+    <string name="empty_answer">The answer cannot be empty ?</string>
+    <string name="empty_radio">You need to pick a question?</string>
+    <string name="mandatory_secure_question_msg">You cannot skip the Secure Question step, its a very mandatory, so we can help you, when you forget your access code </string>
+	
+	 <string name="privacy_terms_text">
+         <![CDATA[
+        <p>Facebook Ads Privacy Policy：click and jump to <a href ="https://www.facebook.com/about/privacy/">https://www.facebook.com/about/privacy/</a></p>
+         <p>Your privacy is important to zakram. Sometimes we need information to provide services that you request, this privacy statement applies to zakram
+         Personal Information </p>
+<p>We DO NOT collect, store or use any personal information while you visit, download or upgrade our products.
+We may use personal information submitted by you only for the following purposes: help us develop, deliver, and improve our products and services and supply higher quality service;
+         manage online surveys and other activities you’ve participated in.
+In the following circumstances, we may disclose your personal information according to your wish or regulations by law:</p>
+<pre>
+    <ul>
+        <li>Your prior permission.</li>
+        <li>By the applicable law within or outside your country of residence, legal process, litigation requests.</li>
+        <li>By requests from public and governmental authorities.</li>
+        <li>To protect our legal rights and interests.</li>
+    </ul>
+</pre>
+<p>
+    <h3>Non- Personal Information </h3>
+    <p><pre>
+        We may collect and use non-personal information in the following circumstances. To have a better understanding in user’s behavior,
+         solve problems in products and services, improve our products, services and advertising, we may collect non-personal information such as
+         installed application name and package name, the data of install, frequency of use, country, equipment and channel.
+If non-personal information is combined with personal information, we treat the combined information as personal information for the purposes of this Privacy Policy.
+Information we get from your use of our services.
+    </pre></p>
+    <p><pre>
+        We may collect information about the services that you use and how you use them, such as when you view
+         and interact with our content. We may collect device-specific information (such as your hardware
+         model, operating system version, unique device identifiers, and mobile network information). zakram will not share that information with third parties.
+    </pre></p>
+</p>
+
+<p>
+    <h3>Location information </h3>
+    <p><pre>
+        When you use a location-enabled zakram service, we may collect and process information about your actual location,
+         like GPS signals sent by a mobile device. We may also use various technologies to determine location, such as sensor
+         data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers.
+    </pre></p>
+</p>
+
+<p>
+    <h3>Unique application numbers </h3>
+    <p><pre>
+        Certain services include a unique application number. This number and information
+         about your installation (for example, the operating system type and application version number) may be
+         sent to zakram when you install or uninstall that service or when that service periodically contacts our servers, such as for automatic updates.
+    </pre></p>
+</p>
+<p><pre>zakram will occasionally update this privacy statement. When we do so, we will also revise the "last modified" date of the privacy statement.</pre></p>
+]]>
+</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zakramlock">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/name_app"
+        android:supportsRtl="true"
+        android:largeHeap="false"
+        android:theme="@style/AppTheme"
+        tools:replace="label">
+        <meta-data
+            android:name="DATABASE"
+            android:value="zakramlock.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="false" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.zakramlock.model" />
+
+        <activity
+            android:name=".ZakraM"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.MonitorService" />
+
+        <receiver
+            android:name=".ZakramReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".haibison.android.lockpattern.LockPatternActivity"
+            android:label="@string/name_app"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Alp_42447968.Theme.Light" />
+        <activity
+            android:name=".UnlockPattern"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".pin.SetPinActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".pin.PinUnlockActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SecretQuestions"
+            android:launchMode="singleTop" />
+
+        <service
+            android:name="com.zakramlock.service.LockServiceBinder"
+            android:enabled="true"
+            android:process=":LockServiceBinder" >
+            <intent-filter>
+                <action android:name="com.zakramlock.service.LockServiceBinder" />
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

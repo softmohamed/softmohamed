@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/lock_app_page"
+    android:background="@drawable/border"
+    android:weightSum="2"
+    >
+    <LinearLayout
+        android:id="@+id/locked_app"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+    <TextView
+        android:text="@string/msg_no_locked_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_locked_app_found"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center" />
+
+    <GridView
+        android:id="@+id/grid_view_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:orientation= "vertical"
+        android:clickable="true"
+        android:isScrollContainer="true" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/choose_app"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

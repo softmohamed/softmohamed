@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_selector"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <com.kbeanie.pinscreenlibrary.views.PinView
+        android:id="@+id/pinView"
+        android:layout_width="match_parent"
+        android:layout_height="311.5dp"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/view_recovery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pinView"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alp_42447968_separator_size"/>
+        <LinearLayout
+            style="?attr/alp_42447968_button_bar_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_recovery_pin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:textColor="@color/black_blue"
+                android:background="@android:color/transparent"
+                android:text="@string/recovery_msg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_gravity="end"
+        ads:adUnitId="@string/ads_id"
+        ads:adSize="FULL_WIDTHx150"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view_recovery">
+    </com.google.android.gms.ads.NativeExpressAdView>
+
+</RelativeLayout>
